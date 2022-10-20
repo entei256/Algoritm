@@ -138,7 +138,19 @@ foreach (var item in SelectedArr)
 }
 #endregion
 
-#region Лгоритмы сортировки
+#region Сортировка Слияния
+Console.WriteLine("\n\nСортировка Слияния");
+Console.WriteLine("До сортировки:");
+foreach (var item in arr)
+{
+    Console.Write(" {0} ", item);
+}
+var MergeArr = MergeSort.Sort(arr);
+Console.WriteLine("\n\nПосле сортировки:");
+foreach (var item in SelectedArr)
+{
+    Console.Write(" {0} ", item);
+}
 #endregion
 
 #region Лгоритмы сортировки
