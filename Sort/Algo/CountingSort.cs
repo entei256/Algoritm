@@ -11,6 +11,7 @@ namespace Sort.Algo
         public static int[] Sort (int[] arr)
         {
             int[] result = new int[arr.Length];
+            arr.CopyTo(result, 0);
 
             return result;
         }

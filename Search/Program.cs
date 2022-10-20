@@ -94,7 +94,8 @@ steps = 0;
 */
 #region Лгоритмы сортировки
 #region Сортировка пузырьком
-Console.WriteLine("\n\nДо сортировки:");
+Console.WriteLine("\n\nСортировка пузырьком");
+Console.WriteLine("До сортировки:");
 foreach (var item in arr)
 {
     Console.Write(" {0} ",item);
@@ -107,10 +108,34 @@ foreach (var item in bubleArr)
 }
 #endregion
 
-#region Лгоритмы сортировки
+#region Сортировка Выбором
+Console.WriteLine("\n\nСортировка Выбором");
+Console.WriteLine("До сортировки:");
+foreach (var item in arr)
+{
+    Console.Write(" {0} ", item);
+}
+var SelectedArr = SelectSort.Sort(arr);
+Console.WriteLine("\n\nПосле сортировки:");
+foreach (var item in SelectedArr)
+{
+    Console.Write(" {0} ", item);
+}
 #endregion
 
-#region Лгоритмы сортировки
+#region Сортировка вставкой
+Console.WriteLine("\n\nСортировка Выбором");
+Console.WriteLine("До сортировки:");
+foreach (var item in arr)
+{
+    Console.Write(" {0} ", item);
+}
+var InsertArr = InsertSort.Sort(arr);
+Console.WriteLine("\n\nПосле сортировки:");
+foreach (var item in SelectedArr)
+{
+    Console.Write(" {0} ", item);
+}
 #endregion
 
 #region Лгоритмы сортировки
