@@ -141,7 +141,19 @@ foreach (var item in SelectedArr)
 #region Лгоритмы сортировки
 #endregion
 
-#region Лгоритмы сортировки
+#region Сортировка Гномья
+Console.WriteLine("\n\nСортировка Гномья");
+Console.WriteLine("До сортировки:");
+foreach (var item in arr)
+{
+    Console.Write(" {0} ", item);
+}
+var GnomeArr = GnomeSort.Sort(arr);
+Console.WriteLine("\n\nПосле сортировки:");
+foreach (var item in SelectedArr)
+{
+    Console.Write(" {0} ", item);
+}
 #endregion
 
 #region Лгоритмы сортировки
