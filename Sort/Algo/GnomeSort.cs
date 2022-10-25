@@ -16,7 +16,7 @@ namespace Sort.Algo
             int tmp;
             int offset = 1;
 
-            for (int i = 0; i < result.Length; i++)
+            for (int i = 0; i < result.Length - 1; i++)
             {
                 if (result[i+offset] > result[i])
                 {
