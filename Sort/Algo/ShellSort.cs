@@ -18,7 +18,7 @@ namespace Sort.Algo
 
             while(step >= 1)
             {
-                for(int i = 0;i<= result.Length;i++)
+                for(int i = 0;i< result.Length;i++)
                 {
                     if (i+step < result.Length)
                     {
@@ -29,6 +29,8 @@ namespace Sort.Algo
                             result[i+step] = tmp;
                         }
                     }
+                    else
+                        break;
                 }
                 step /= 2;
             }
