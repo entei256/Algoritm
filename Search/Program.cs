@@ -157,7 +157,7 @@ foreach (var item in SelectedArr)
 #endregion
 
 #region Сортировка Шелла
-Console.WriteLine("\n\nСортировка Гномья");
+Console.WriteLine("\n\nСортировка Шелла");
 Console.WriteLine("До сортировки:");
 foreach (var item in arr)
 {
