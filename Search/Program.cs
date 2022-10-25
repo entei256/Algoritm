@@ -171,7 +171,19 @@ foreach (var item in SelectedArr)
 }
 #endregion
 
-#region Лгоритмы сортировки
+#region Сортировка Подсчетом
+Console.WriteLine("\n\nСортировка Подсчетом");
+Console.WriteLine("До сортировки:");
+foreach (var item in arr)
+{
+    Console.Write(" {0} ", item);
+}
+var CountArr = CountingSort.Sort(arr);
+Console.WriteLine("\n\nПосле сортировки:");
+foreach (var item in SelectedArr)
+{
+    Console.Write(" {0} ", item);
+}
 #endregion
 
 #endregion
