@@ -94,6 +94,16 @@ steps = 0;
 #endregion
 
 
+for (int i = 0; i<arr.Length; i++)
+{
+    int v = rnd.Next(1, 1_00);
+    if (Array.IndexOf(arr, v) <= 0)
+        arr[i] = v;
+    else
+        i--;
+}
+
+
 #region Алгоритмы сортировки
 
 #region Сортировка пузырьком

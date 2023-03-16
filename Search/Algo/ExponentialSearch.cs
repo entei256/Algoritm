@@ -33,7 +33,7 @@ namespace Search.Algo
                         currentStep += step;
                     }
                     else
-                        currentStep = source.Length;
+                        currentStep = source.Length-1;
                 }
                 else
                 {

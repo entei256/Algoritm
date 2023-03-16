@@ -27,8 +27,10 @@ namespace Sort.Algo
                     tmp = result[i+offset];
                     result[i+offset] = result[i];
                     result[i] = tmp;
-                    if (i > 1) i--;
-                    else i = 0;
+                    if (i > 1) 
+                        i--;
+                    else 
+                        i = 1;
                 }
             }
                 
