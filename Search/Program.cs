@@ -154,6 +154,7 @@ foreach (var item in SelectedArr)
 {
     Console.Write(" {0} ", item);
 }
+#endregion
 
 #region Сортировка Гномья
 Console.WriteLine("\n\nСортировка Гномья");
