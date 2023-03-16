@@ -93,6 +93,7 @@ steps = 0;
 
 
 #region Алгоритмы сортировки
+/*
 #region Сортировка пузырьком
 Console.WriteLine("\n\nСортировка пузырьком");
 Console.WriteLine("До сортировки:");
@@ -137,9 +138,7 @@ foreach (var item in InsertArr)
     Console.Write(" {0} ", item);
 }
 #endregion
-
-#region Лгоритмы сортировки
-#endregion
+*/
 
 #region Сортировка Гномья
 Console.WriteLine("\n\nСортировка Гномья");
@@ -155,7 +154,7 @@ foreach (var item in GnomeArr)
     Console.Write(" {0} ", item);
 }
 #endregion
-
+/*
 #region Сортировка Шелла
 Console.WriteLine("\n\nСортировка Шелла");
 Console.WriteLine("До сортировки:");
@@ -185,7 +184,7 @@ foreach (var item in CountArr)
     Console.Write(" {0} ", item);
 }
 #endregion
-
+*/
 #endregion
 
 Console.ReadLine();

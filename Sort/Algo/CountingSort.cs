@@ -12,7 +12,7 @@ namespace Sort.Algo
         public static int[] Sort (int[] arr)
         {
             var maxValue = arr.Max();
-            int[] tmpArr = new int[maxValue+1]; //Еще учитываем чято индексы начинаяются с 0 по этому +1 к велечене массива.
+            int[] tmpArr = new int[maxValue+1]; //Еще учитываем что индексы начинаяются с 0 по этому +1 к велечене массива.
             int[] result = new int[arr.Length];
             int step = 0;
             //Заполняем TMP массив

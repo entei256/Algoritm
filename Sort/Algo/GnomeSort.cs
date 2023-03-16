@@ -13,20 +13,22 @@ namespace Sort.Algo
             int[] result = new int[arr.Length];
             arr.CopyTo(result, 0);
 
-            int tmp;
-            int offset = 1;
+            int tmp,i = 1;
+            int offset = -1;
+
             
-            for (int i = 0; i < result.Length - 1;i++)
+            while (i < result.Length)
             {
-                if (result[i+offset] > result[i])
+                if (result[i+offset] < result[i])
                 {
-                    offset = 1;
+                    i++;
                 } else
                 {
-                    tmp = result[i];
+                    tmp = result[i+offset];
                     result[i+offset] = result[i];
                     result[i] = tmp;
-                    offset = -1;
+                    if (i > 1) i--;
+                    else i = 0;
                 }
             }
                 
