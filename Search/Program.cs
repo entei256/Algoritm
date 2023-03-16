@@ -23,7 +23,8 @@ for (int i = 0; i<arr.Length;i++)
 lookingValue = arr[(new Random()).Next(0, arr.Length-1)];
 
 #region Алгоритмы поиска
-/*#region Линейный поиск
+
+#region Линейный поиск
 Console.WriteLine("Линейный поиск");
     tstart = DateTime.Now;
     steps++;
@@ -73,7 +74,7 @@ Console.WriteLine("\n\nПоиск интерполяционный");
     tstart = DateTime.Now;
     steps++;
 
-    rl = InterpolatingSearch.Search(arr, lookingValue);
+rl = InterpolatingSearch.Search(arr, lookingValue);
 tstop = DateTime.Now;
 Console.WriteLine("index:{0} Ticks:{1}", rl, (tstop.Ticks - tstart.Ticks));
 steps = 0;
@@ -88,12 +89,13 @@ rl = ExponentialSearch.Search(arr, lookingValue);
 tstop = DateTime.Now;
 Console.WriteLine("index:{0} Ticks:{1}", rl, (tstop.Ticks - tstart.Ticks));
 steps = 0;
-#endregion*/
+#endregion
+
 #endregion
 
 
 #region Алгоритмы сортировки
-/*
+
 #region Сортировка пузырьком
 Console.WriteLine("\n\nСортировка пузырьком");
 Console.WriteLine("До сортировки:");
@@ -138,7 +140,7 @@ foreach (var item in InsertArr)
     Console.Write(" {0} ", item);
 }
 #endregion
-*/
+
 
 #region Сортировка Гномья
 Console.WriteLine("\n\nСортировка Гномья");
@@ -154,7 +156,7 @@ foreach (var item in GnomeArr)
     Console.Write(" {0} ", item);
 }
 #endregion
-/*
+
 #region Сортировка Шелла
 Console.WriteLine("\n\nСортировка Шелла");
 Console.WriteLine("До сортировки:");
@@ -184,7 +186,7 @@ foreach (var item in CountArr)
     Console.Write(" {0} ", item);
 }
 #endregion
-*/
+
 #endregion
 
 Console.ReadLine();

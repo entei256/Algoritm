@@ -14,9 +14,14 @@ namespace Search.Algo
             int righti = source.Length - 1;
 
             Array.Sort(source);
+
+            Console.WriteLine("***Сортируем массив, требуется для алгоритма");
+            foreach (int i in source) { Console.Write(i + ", "); }
+            Console.WriteLine("\nИщим цисло: {0}", looking);
+
             int curri;
 
-            while (looking > source[lefti] && looking < source[righti])
+            while (looking >= source[lefti] && looking <= source[righti])
             {
                 if (lefti == righti)
                     break;

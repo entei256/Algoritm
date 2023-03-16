@@ -16,11 +16,15 @@ namespace Search.Algo
 
             Array.Sort(source);
 
+            Console.WriteLine("***Сортируем массив, требуется для алгоритма");
+            foreach (int i in source) { Console.Write(i + ", "); }
+            Console.WriteLine("\nИщим цисло: {0}",looking);
+
             while (previousStep != currentStep)
             {
-                if (looking == source[currentStep - 1])
+                if (looking == source[currentStep])
                     return currentStep;
-                else if (looking > source[currentStep -1])
+                else if (looking > source[currentStep])
                 {
                     previousStep = currentStep;
                     currentStep += step;

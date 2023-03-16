@@ -16,6 +16,10 @@ namespace Search.Algo
 
             Array.Sort(source);
 
+            Console.WriteLine("***Сортируем массив, требуется для алгоритма");
+            foreach (int i in source) { Console.Write(i + ", "); }
+            Console.WriteLine("\nИщим цисло: {0}", looking);
+
             while (lefti<=righti)
             {
                 if (source[mid] == looking)
@@ -71,6 +75,10 @@ namespace Search.Algo
             int mid = (lefti + righti)/2;
 
             Array.Sort(source);
+
+            Console.WriteLine("***Сортируем массив, требуется для алгоритма");
+            foreach (int i in source) { Console.Write(i + ", "); }
+            Console.WriteLine("\nИщим цисло: {0}", looking);
 
             if (source[mid] == looking)
             {
